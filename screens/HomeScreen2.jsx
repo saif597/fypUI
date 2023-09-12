@@ -29,29 +29,29 @@ const HomeScreen2 = () => {
                   <Text style={styles.menuText}>Menu</Text>
                 </View>
                 <View style={styles.icons}>
-                  <TouchableOpacity style={styles.iconContainer}>
+                  <TouchableOpacity style={styles.iconContainer} onPress={()=> navigation.navigate('Profile')}>
                     <Ionic name="person" size={28} color={COLORS.primary} style={styles.homeIcon} />
                     <Text style={styles.iconText}>Profile</Text>
                   </TouchableOpacity>
-                  <TouchableOpacity style={styles.iconContainer}>
+                  <TouchableOpacity style={styles.iconContainer} onPress={()=> navigation.navigate('History')}>
                     <Ionic name="archive" size={28} color={COLORS.primary} style={styles.homeIcon} />
                     <Text style={styles.iconText}>History</Text>
                   </TouchableOpacity>
-                  <TouchableOpacity style={styles.iconContainer}>
+                  <TouchableOpacity style={styles.iconContainer} onPress={()=> navigation.navigate('Settings')}>
                     <Ionic name="settings" size={28} color={COLORS.primary} style={styles.homeIcon} />
                     <Text style={styles.iconText}>Settings</Text>
                   </TouchableOpacity>
                 </View>
                 <View style={styles.icons}>
-                  <TouchableOpacity style={styles.iconContainer}>
+                  <TouchableOpacity style={styles.iconContainer} onPress={()=> navigation.navigate('Stats')}>
                     <Ionic name="stats-chart" size={28} color={COLORS.primary} style={styles.homeIcon} />
                     <Text style={styles.iconText}>Stats</Text>
                   </TouchableOpacity>
-                  <TouchableOpacity style={styles.iconContainer}>
+                  <TouchableOpacity style={styles.iconContainer} onPress={()=> navigation.navigate('ProductsList')}>
                     <Ionic name="list" size={28} color={COLORS.primary} style={styles.homeIcon} />
                     <Text style={styles.iconText}>Products</Text>
                   </TouchableOpacity>
-                  <TouchableOpacity style={styles.iconContainer}>
+                  <TouchableOpacity style={styles.iconContainer} onPress={()=> navigation.navigate('Settings')}>
                     <Ionic name="print" size={28} color={COLORS.primary} style={styles.homeIcon} />
                     <Text style={styles.iconText}>Printer</Text>
                   </TouchableOpacity>
@@ -75,7 +75,7 @@ const HomeScreen2 = () => {
                         <Text  style={styles.billTime}>
                           07:36 PM
                         </Text>
-                      <TouchableOpacity  style={styles.billViewButton}>
+                      <TouchableOpacity  style={styles.billViewButton} onPress={()=> navigation.navigate('Receipt')}>
                           <Text  style={styles.billViewText}>
                             View
                           </Text>

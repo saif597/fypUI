@@ -29,7 +29,7 @@ const SignUpScreen = () => {
         <TextInput secureTextEntry style={[styles.formInput, styles.passwordInput]} />
        </View>
        <View style={styles.signupButtonContainer}>
-       <TouchableOpacity style={styles.signupButton}  onPress={()=> navigation.navigate('Navigator')}>
+       <TouchableOpacity style={styles.signupButton}  onPress={()=> navigation.navigate('Home')}>
         <Text style={styles.signupText}>Sign Up</Text>
        </TouchableOpacity>
        </View >

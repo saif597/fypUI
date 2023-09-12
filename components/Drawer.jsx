@@ -14,8 +14,12 @@ import {
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import { COLORS } from '../assets/theme';
+import { useNavigation } from '@react-navigation/native'; 
+
+
 
 const Drawer = props => {
+  const navigation = useNavigation();
   return (
     <View style={{flex: 1}}>
       <DrawerContentScrollView
@@ -65,7 +69,7 @@ const Drawer = props => {
                 </Text>
             </View>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={{paddingVertical: 15}}>
+            <TouchableOpacity style={{paddingVertical: 15}} onPress={()=> navigation.navigate('Profile')}>
             <View style={{flexDirection: 'row'}}>
                 <Ionicons name="person-outline" size={22} color={COLORS.primary} />
                 <Text
@@ -80,8 +84,8 @@ const Drawer = props => {
                 </Text>
             </View>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={{paddingVertical: 15}}>
-            <View style={{flexDirection: 'row'}}>
+            <TouchableOpacity style={{paddingVertical: 15}} onPress={()=> navigation.navigate('Scan')}>
+             <View style={{flexDirection: 'row'}}>
                 <Ionicons name="scan-outline" size={22} color={COLORS.primary} />
                 <Text
                 style={{
@@ -95,7 +99,7 @@ const Drawer = props => {
                 </Text>
             </View>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={{paddingVertical: 15}}>
+            <TouchableOpacity style={{paddingVertical: 15}} onPress={()=> navigation.navigate('History')}>
             <View style={{flexDirection: 'row'}}>
                 <Ionicons name="archive-outline" size={22} color={COLORS.primary} />
                 <Text
@@ -110,7 +114,7 @@ const Drawer = props => {
                 </Text>
             </View>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => {}} style={{paddingVertical: 15}}>
+            <TouchableOpacity style={{paddingVertical: 15}} onPress={()=> navigation.navigate('Settings')}>
             <View style={{flexDirection: 'row'}}>
                 <Ionicons name="settings-outline" size={22} color={COLORS.primary} />
                 <Text

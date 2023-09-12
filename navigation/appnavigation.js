@@ -1,6 +1,5 @@
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import HomeScreen from '../screens/HomeScreen';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import SignUpScreen from '../screens/SignUpScreen';
 import LoginScreen from '../screens/LoginScreen';
@@ -28,7 +27,6 @@ const Drawer = createDrawerNavigator();
 const appnavigation = () => {
   return (
     <Drawer.Navigator drawerContent={props=> <CustomDrawer{...props}/>} screenOptions={{headerShown: false}} initialRouteName="Welcome">
-      <Drawer.Screen name="Home"  component={HomeScreen} />
       <Drawer.Screen name="Welcome" component={WelcomeScreen} />
       <Drawer.Screen name="Login" component={LoginScreen} />
       <Drawer.Screen name="SignUp" component={SignUpScreen} />
@@ -41,13 +39,13 @@ const appnavigation = () => {
       <Drawer.Screen name="Receipt" component={Receipt} />
       <Drawer.Screen name="ImageView" component={ImageViewScreen} />
       <Drawer.Screen name="About" component={AboutScreen} />
-      <Drawer.Screen name="Products List" component={ProductsScreen} />
+      <Drawer.Screen name="ProductsList" component={ProductsScreen} />
       <Drawer.Screen name="Dashboard" component={Dashboard} />
       <Drawer.Screen name="Profile" component={Profile} />
       <Drawer.Screen name="Stats" component={Stats} />
       <Drawer.Screen name="Product" component={Product} />
       <Drawer.Screen name="Scan" component={Scan} />
-      <Drawer.Screen name="Home2" component={Dashboard} />
+      <Drawer.Screen name="Home" component={Dashboard} />
     </Drawer.Navigator>
   );
 };

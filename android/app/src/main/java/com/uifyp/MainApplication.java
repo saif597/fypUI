@@ -1,6 +1,5 @@
 package com.uifyp;
 // import com.reactnativecommunity.picker.RNCPickerPackage;
-import com.safaeean.barcodescanner.BarcodeScannerPackage;
 import android.app.Application;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
@@ -25,7 +24,7 @@ public class MainApplication extends Application implements ReactApplication {
           @SuppressWarnings("UnnecessaryLocalVariable")
           List<ReactPackage> packages = new PackageList(this).getPackages();
           // Packages that cannot be autolinked yet can be added manually here, for example:
-          packages.add(new BarcodeScannerPackage());
+          // packages.add(new MyReactNativePackage());
           return packages;
         }
 
