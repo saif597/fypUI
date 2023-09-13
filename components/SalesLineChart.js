@@ -38,7 +38,7 @@ const SalesLineChart = () => {
       <View
         style={[styles.chartCard, {height: cardHeight}, {width: cardWidth}]}>
         <View style={styles.chartTitleContainer}>
-          <Text style={styles.chartTitle}>Monthly Sales</Text>
+          <Text style={styles.chartTitle}>Sales Graph</Text>
         </View>
         <View style={styles.chartContainer}>
           <LineChart
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
   },
   chartCard: {
-    // elevation: 4,
+    elevation: 4,
     backgroundColor: COLORS.primary,
     borderRadius: 8,
     marginTop: windowHeight * 0.02,
@@ -101,8 +101,7 @@ const styles = StyleSheet.create({
   chartTitle: {
     color: 'white',
     fontSize: 16,
-    fontFamily:'Poppins-Regular',
-    marginBottom:10,
+    fontWeight: 'bold',
   },
   chartContainer: {
     flex: 1,
